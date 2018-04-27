@@ -7,6 +7,11 @@ class Block {
         this.data = data;
     }
 
+
+    static genesis(){
+        return new this("time", "------", "vjjJDjovsdv", []);
+    }
+
     toString(){
         return `
         Timestamp    : ${this.timestamp}
