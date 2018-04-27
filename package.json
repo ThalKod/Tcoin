@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ThalKod/Tcoin#readme",
   "dependencies": {},
   "devDependencies": {
+    "crypto-js": "^3.1.9-1",
     "nodemon": "^1.17.3"
   }
 }

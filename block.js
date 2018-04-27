@@ -1,4 +1,7 @@
 //Block Class, Containing our Block implementation
+const SHA256 = require("crypto-js").SHA256;
+
+
 class Block {
     constructor(timestamp, previousHash, hash, data){
         this.timestamp = timestamp;
@@ -15,9 +18,13 @@ class Block {
     static mineBlock(lastBlock, data){
         const timestamp = Date.now();
         const lastHash = lastBlock.hash;
-        const hash = "okokaak";
+        const hash = Block.hash(timestamp, lastHash, data);
 
         return new this(timestamp, lastHash, hash, data);
+    }
+
+    static hash(timestamp, lastHash, data){
+        return SHA256(timestamp + lastHash + data).toString();
     }
 
     toString(){
