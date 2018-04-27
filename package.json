@@ -1,0 +1,23 @@
+{
+  "name": "tcoin",
+  "version": "1.0.0",
+  "description": "Tcoin Is a custom blockchain based cryptocurrency",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThalKod/Tcoin.git"
+  },
+  "author": "Thal Marcelin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThalKod/Tcoin/issues"
+  },
+  "homepage": "https://github.com/ThalKod/Tcoin#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
