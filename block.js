@@ -12,11 +12,19 @@ class Block {
         return new this("time", "------", "vjjJDjovsdv", []);
     }
 
+    static mineBlock(lastBlock, data){
+        const timestamp = Date.now();
+        const lastHash = lastBlock.hash;
+        const hash = "okokaak";
+
+        return new this(timestamp, lastHash, hash, data);
+    }
+
     toString(){
         return `
         Timestamp    : ${this.timestamp}
-        Previous Hash: ${this.previousHash.substring(0,10)}
-        Hash         : ${this.hash.substring(0,10)}
+        Previous Hash: ${this.previousHash}
+        Hash         : ${this.hash}
         Data         : ${this.data}`;
     }
 };
