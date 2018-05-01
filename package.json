@@ -4,7 +4,9 @@
   "description": "Tcoin Is a custom blockchain based cryptocurrency",
   "main": "app.js",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "start": "node app",
+    "dev": "nodemon app"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,9 @@
     "url": "https://github.com/ThalKod/Tcoin/issues"
   },
   "homepage": "https://github.com/ThalKod/Tcoin#readme",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.3"
+  },
   "devDependencies": {
     "crypto-js": "^3.1.9-1",
     "jest": "^22.4.3",
