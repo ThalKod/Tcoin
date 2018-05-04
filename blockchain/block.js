@@ -1,7 +1,7 @@
 //Block Class, Containing our Block implementation
 const SHA256 = require("crypto-js").SHA256;
+const {DIFICULTY} = require("../config");
 
-const DIFICULTY = 4;
 
 class Block {
     constructor(timestamp, previousHash, hash, data, nonce){
@@ -45,8 +45,8 @@ class Block {
         return `
         Timestamp    : ${this.timestamp}
         Previous Hash: ${this.previousHash}
-        Hash         : ${this.hash},
-        Nonce        : ${this.nonce},
+        Hash         : ${this.hash}
+        Nonce        : ${this.nonce}
         Data         : ${this.data}`;
     }
 };
