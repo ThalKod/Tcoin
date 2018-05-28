@@ -8,6 +8,9 @@
     "start": "node app",
     "dev": "nodemon app"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ThalKod/Tcoin.git"
