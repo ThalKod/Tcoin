@@ -15,7 +15,11 @@ describe("Transaction", ()=>{
         expect(transaction.outputs.find(output => output.address === wallet.publicKey).amount).toEqual(wallet.balance - amount);
     });
 
-    it("should outpout the amount added to the recipient", () =>{
+    it("should input the balance of the balance of the wallet", ()=>{
+        expect(transaction.input.amount).toEqual(wallet.balance);
+    });
+
+    it("should output the amount added to the recipient", () =>{
         expect(transaction.outputs.find(output => output.address === recipient).amount).toEqual(amount);
     });
 });
