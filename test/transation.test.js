@@ -7,7 +7,7 @@ describe("Transaction", ()=>{
     beforeEach(() =>{
         wallet = new Wallet();
         amount = 50;
-        recipient = "recipient address",
+        recipient = "recipient address";
         transaction = Transaction.newTransaction(wallet, recipient, amount);
     });
 
