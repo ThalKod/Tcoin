@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/ThalKod/Tcoin#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.18.3",
     "elliptic": "^6.4.0",
     "express": "^4.16.3",
     "uuid": "^3.2.1",
